@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calcul conversion & panier moyen — Fly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo-myfly-flat.png" alt="Logo Fly" />
+    </header>
+
+    <main class="container">
+      <h1>Calcul taux de conversion site internet</h1>
+
+      <form id="form">
+        <div class="field">
+          <label for="mois">Mois</label>
+          <input id="mois" type="month" required />
+        </div>
+
+        <div class="field">
+          <label for="sessions">Sessions (visites)</label>
+          <input
+            id="sessions"
+            type="text"
+            inputmode="numeric"
+            placeholder="ex : 16 036"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="commandes">Commandes</label>
+          <input
+            id="commandes"
+            type="text"
+            inputmode="numeric"
+            placeholder="ex : 52"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="ca">Chiffre d'affaires (€)</label>
+          <input
+            id="ca"
+            type="text"
+            inputmode="decimal"
+            placeholder="ex : 12 345,67"
+            required
+          />
+        </div>
+
+        <button type="submit" id="btn">Calculer</button>
+      </form>
+
+      <section id="resultats" aria-live="polite">
+        <h2>Résultats</h2>
+        <p><strong>Taux de conversion :</strong> <span id="tx">—</span></p>
+        <p><strong>Panier moyen :</strong> <span id="aov">—</span></p>
+        <p class="note" id="note"></p>
+      </section>
+    </main>
+  </body>
+</html>
