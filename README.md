@@ -14,11 +14,6 @@ Petit outil en HTML / CSS / JavaScript permettant de calculer simplement :
 - `app.js` : logique de calcul
 - `logo-fly.png` : logo affiché dans l'en-tête
 
-## Mise en ligne
-
-Le site est hébergé via **GitHub Pages** à l’adresse :  
-[https://lucasballand.github.io/taux-de-conversion/](https://lucasballand.github.io/taux-de-conversion/)
-
 ## Utilisation
 
 1. Renseigner :
